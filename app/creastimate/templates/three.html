@@ -225,28 +225,28 @@
          var namespace = '/creastimate_chat';
          socket = io.connect(location.protocol + '//' + document.domain + location.port + namespace);
          console.log(location.protocol + '//' + document.domain + location.port + namespace);
-         // socket = io.connect('https://' + document.domain + ':' + location.port + '/creastimate_chat');
-         //
-         // socket.on('receive_data', function(data) {
-         //    alert('creativity score was: ' + data.creativity);
-         //    });
+         socket = io.connect('https://' + document.domain + ':' + location.port + '/creastimate_chat');
 
-        // $('button').click(function(){
-        //     var t =document.getElementById('num_unique_word').innerText.split(" ");
-        //     var numOfUniqueWords =t[0];
-        //     t =document.getElementById('num_difficult_word').innerText.split(" ");
-        //     var numOfDifficultWords =t[0];
-        //     var smartHomeXP =document.getElementById('smartHomeXP').value;
-        //     var e = document.getElementById("familySize");
-        //     var familySize = e.options[e.selectedIndex].value;
-        //     //var data ='{' + '"numOfUniqueWords" :' + numOfUniqueWords + ', "numOfDifficultWords" :' + numOfDifficultWords + ', "smartHomeXP" :' + smartHomeXP + ', "familySize" :' + familySize + '}'; //need to send this string along with the demographics to the python script
-        //     //alert(data);
-        //     socket.emit('send_data', { numOfUniqueWords:numOfUniqueWords, numOfDifficultWords:numOfDifficultWords, smartHomeXP:smartHomeXP, familySize:familySize });
-        //     // $.post("stable.php", { numOfUniqueWords:numOfUniqueWords, numOfDifficultWords:numOfDifficultWords, smartHomeXP:smartHomeXP, familySize:familySize }, function(data, status){
-        //     //     alert("Data: " + data + "\nStatus: " + status);
-        //     // });
-        //
-        //     });
+         socket.on('receive_data', function(data) {
+            alert('creativity score was: ' + data.creativity);
+            });
+
+        $('button').click(function(){
+            var t =document.getElementById('num_unique_word').innerText.split(" ");
+            var numOfUniqueWords =t[0];
+            t =document.getElementById('num_difficult_word').innerText.split(" ");
+            var numOfDifficultWords =t[0];
+            var smartHomeXP =document.getElementById('smartHomeXP').value;
+            var e = document.getElementById("familySize");
+            var familySize = e.options[e.selectedIndex].value;
+            //var data ='{' + '"numOfUniqueWords" :' + numOfUniqueWords + ', "numOfDifficultWords" :' + numOfDifficultWords + ', "smartHomeXP" :' + smartHomeXP + ', "familySize" :' + familySize + '}'; //need to send this string along with the demographics to the python script
+            //alert(data);
+            socket.emit('send_data', { numOfUniqueWords:numOfUniqueWords, numOfDifficultWords:numOfDifficultWords, smartHomeXP:smartHomeXP, familySize:familySize });
+            // $.post("stable.php", { numOfUniqueWords:numOfUniqueWords, numOfDifficultWords:numOfDifficultWords, smartHomeXP:smartHomeXP, familySize:familySize }, function(data, status){
+            //     alert("Data: " + data + "\nStatus: " + status);
+            // });
+
+            });
         });
 
         // $("button").click(function(){
