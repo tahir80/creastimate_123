@@ -224,6 +224,7 @@
      $(document).ready(function(){
          var namespace = '/creastimate_chat';
          socket = io.connect(location.protocol + '//' + document.domain + location.port + namespace);
+         console.log(location.protocol + '//' + document.domain + location.port + namespace);
          // socket = io.connect('https://' + document.domain + ':' + location.port + '/creastimate_chat');
          //
          // socket.on('receive_data', function(data) {
