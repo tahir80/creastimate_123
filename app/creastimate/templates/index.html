@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row first-row">
+            <div class="col-md-9">
+                <h2 class="text-center mbt-20">Demographics <br/> (all fields are required) </h2>
+            </div>
+
+            <div class="col-md-3">
+                <div class="progress mt-2">
+                    <div class="progress-bar" style="width: 20%;">20%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <p class="tr-right m-7">Family Size (Numeric)</p>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <select name="familySize" class="form-control ctr-input" required>
+                        <option value="" selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="tr-right m-7">Smart Home Experience (Months)</p>
+
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <input name="smartHomeXP" class="ctr-input form-control" type="text" required placeholder="How many months of experience do you have as a user of IoT products?">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="tr-right m-7">Programming Experience</p>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <select class="ctr-input form-control" name="porgammingXP" required>
+                        <option value="" selected></option>
+                        <option value="1">Beginner</option>
+                        <option value="2">Intermediate</option>
+                        <option value="3">Experience</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <p class="tr-right">Gender</p>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group ctr-last">
+                    <label class="radio-inline mr-3">
+                        <input class="ctr-last-group-1" type="radio" name="gender" required value="1">Male
+                    </label>
+
+                    <label class="radio-inline">
+                        <input class="ctr-last-group-2" type="radio" name="gender" required value="2">Female
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <a href="one.html" class="btn btn-info custom-btn  mt-5">Next</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}"> -->
+
+    <!-- <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script> -->
+
+</body>
+</html>
