@@ -10,7 +10,7 @@ from flask_cors import CORS
 db = SQLAlchemy()
 bootstrap = Bootstrap()
 login_manager = LoginManager()
-socketio = SocketIO()
+# socketio = SocketIO()
 
 login_manager.login_view = 'authentication.do_the_login'
 login_manager.session_protection = 'strong'
@@ -30,7 +30,7 @@ def create_app(config_type):
     bootstrap.init_app(app)
     login_manager.init_app(app)
     bcrypt.init_app(app)
-    socketio.init_app(app)
+    # socketio.init_app(app)
 
     from app.creastimate import creastimate_main
     app.register_blueprint(creastimate_main)

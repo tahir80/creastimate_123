@@ -5,7 +5,7 @@ import pandas as pd
 #import the necessary library from SKLearn to apply the SVM algorithm
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
-from itertools import combinations 
+from itertools import combinations
 from sklearn.metrics import f1_score
 import sys
 #----------------------------------------------------------------------------------

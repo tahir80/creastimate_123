@@ -1,10 +1,10 @@
 from app import db
 from app.creastimate import creastimate_main
 from sqlalchemy import exc,asc, desc, and_, or_
-from flask_socketio import SocketIO, emit, join_room, leave_room, \
+# from flask_socketio import SocketIO, emit, join_room, leave_room, \
     close_room, rooms, disconnect
 from flask import session, request
-from app import socketio
+# from app import socketio
 import datetime
 
 ##ML stuff
